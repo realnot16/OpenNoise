@@ -1,0 +1,2 @@
+rootProject.name='OpenNoise'
+include ':app'

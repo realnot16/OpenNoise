@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background">
+
+    <include
+        android:id="@+id/profile_toolbar_layout_id"
+        layout="@layout/toolbar_layout"></include>
+
+    <ImageView
+        android:id="@+id/profile_logo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/profile_logo_text"
+        app:layout_constraintBottom_toTopOf="@+id/profile_changeP_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <Button
+        android:id="@+id/profile_changeP_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="changeP"
+        android:text="@string/profilo_changep_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_privacy_button_id"
+        app:layout_constraintStart_toStartOf="@+id/profile_privacy_button_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/profile_privacy_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="privacy"
+        android:text="@string/profilo_privacy_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_changeP_id" />
+
+    <Button
+        android:id="@+id/profile_settings_button_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="settings"
+        android:text="@string/profilo_settings_text"
+        app:layout_constraintEnd_toEndOf="@+id/profile_privacy_button_id"
+        app:layout_constraintStart_toStartOf="@+id/profile_privacy_button_id"
+        app:layout_constraintTop_toBottomOf="@+id/profile_privacy_button_id" />
+
+    <Button
+        android:id="@+id/profile_logout_button_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="logout"
+        android:text="@string/profilo_logout_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profile_privacy_button_id"
+        app:layout_constraintStart_toStartOf="@+id/profile_privacy_button_id"
+        app:layout_constraintTop_toBottomOf="@+id/profile_settings_button_id" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".TaraActivity">
+
+    <include
+        android:id="@+id/tara_toolbar_layout_id"
+        layout="@layout/toolbar_layout"></include>
+
+    <ImageView
+        android:id="@+id/tara_logo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/tara_logo_text"
+        app:layout_constraintBottom_toTopOf="@+id/tara_quiet_button_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/tara_quiet_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/tara_quiet_text"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_quiet_button_id"
+        app:layout_constraintEnd_toStartOf="@+id/tara_quiet_button_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_quiet_button_id" />
+
+    <TextView
+        android:id="@+id/tara_moderate_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tara_moderate_text"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_moderate_button_id"
+        app:layout_constraintStart_toStartOf="@+id/tara_quiet_text_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_moderate_button_id" />
+
+    <TextView
+        android:id="@+id/tara_loud_text_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tara_loud_text"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_loud_button_id"
+        app:layout_constraintStart_toStartOf="@+id/tara_moderate_text_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_loud_button_id" />
+
+    <ImageView
+        android:id="@+id/tara_quiet_icon_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/tara_icon_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_quiet_button_id"
+        app:layout_constraintEnd_toStartOf="@+id/tara_quiet_text_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_quiet_button_id"
+        app:srcCompat="@drawable/ic_tara_icon_quiet" />
+
+    <ImageView
+        android:id="@+id/tara_moderate_icon_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/tara_icon_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_moderate_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/tara_quiet_icon_id"
+        app:layout_constraintStart_toStartOf="@+id/tara_quiet_icon_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_moderate_button_id"
+        app:srcCompat="@drawable/ic_tara_icon_moderate" />
+
+    <ImageView
+        android:id="@+id/tara_loud_icon_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/tara_icon_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_loud_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/tara_moderate_icon_id"
+        app:layout_constraintStart_toStartOf="@+id/tara_moderate_icon_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_loud_button_id"
+        app:srcCompat="@drawable/ic_tara_icon_loud" />
+
+    <ImageView
+        android:id="@+id/tara_quiet_status_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="@string/tara_status_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_quiet_button_id"
+        app:layout_constraintStart_toEndOf="@+id/tara_quiet_button_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_quiet_button_id" />
+
+    <ImageView
+        android:id="@+id/tara_moderate_status_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/tara_status_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_moderate_button_id"
+        app:layout_constraintStart_toStartOf="@+id/tara_quiet_status_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_moderate_button_id" />
+
+    <ImageView
+        android:id="@+id/tara_loud_status_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/tara_status_text"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_loud_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/tara_moderate_status_id"
+        app:layout_constraintStart_toStartOf="@+id/tara_moderate_status_id"
+        app:layout_constraintTop_toTopOf="@+id/tara_loud_button_id" />
+
+    <TextView
+        android:id="@+id/tara_description_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="20sp"
+        android:text="@string/tara_description_text"
+        android:textColor="@color/BlueMain"
+        app:layout_constraintBottom_toBottomOf="@+id/tara_logo_id"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/tara_quiet_button_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_tara_button_quiet"
+        android:elevation="20dp"
+        android:onClick="setAmplitudeQuiet"
+        android:text="@string/tara_registration_button_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tara_description_id"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tara_moderate_button_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/gradient_tara_button_moderate"
+        android:elevation="20dp"
+        android:onClick="setAmplitudeModerate"
+        android:text="@string/tara_registration_button_text"
+        app:layout_constraintEnd_toEndOf="@+id/tara_quiet_button_id"
+        app:layout_constraintStart_toStartOf="@+id/tara_quiet_button_id"
+        app:layout_constraintTop_toBottomOf="@+id/tara_quiet_button_id" />
+
+    <Button
+        android:id="@+id/tara_loud_button_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/gradient_tara_button_loud"
+        android:elevation="20dp"
+        android:onClick="setAmplitudeLoud"
+        android:text="@string/tara_registration_button_text"
+        app:layout_constraintEnd_toEndOf="@+id/tara_moderate_button_id"
+        app:layout_constraintStart_toStartOf="@+id/tara_moderate_button_id"
+        app:layout_constraintTop_toBottomOf="@+id/tara_moderate_button_id" />
+
+    <Button
+        android:id="@+id/tara_send_button_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="32dp"
+        android:background="@color/send_button"
+        android:onClick="goToMain"
+        android:text="@string/tara_complete_button_text"
+        android:textColor="@color/WhiteMain"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

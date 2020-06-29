@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_constaint_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background">
+
+    <ImageView
+        android:id="@+id/login_logo_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:contentDescription="@string/app_name"
+        app:layout_constraintBottom_toTopOf="@+id/login_emailField_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <EditText
+        android:id="@+id/login_emailField_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="128dp"
+        android:autofillHints="Email"
+        android:drawableStart="@drawable/login_ic_person_black_24dp"
+        android:drawableLeft="@drawable/login_ic_person_black_24dp"
+        android:ems="10"
+        android:hint="@string/login_emailField_text"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/login_passwordField_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:autofillHints="Password"
+        android:drawableStart="@drawable/login_ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="@string/login_passwordField_text"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_emailField_id"
+        android:drawableLeft="@drawable/login_ic_lock_black_24dp" />
+
+    <TextView
+        android:id="@+id/login_passwordDimenticata_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:drawableStart="@drawable/login_ic_lock_open_black_24dp"
+        android:text="@string/login_passwordDimenticata_description_text"
+        app:layout_constraintEnd_toEndOf="@+id/login_passwordField_id"
+        app:layout_constraintTop_toBottomOf="@+id/login_passwordField_id"
+        app:layout_constraintWidth_max="wrap"
+        android:drawableLeft="@drawable/login_ic_lock_open_black_24dp" />
+
+    <TextView
+        android:id="@+id/login_registrati_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="goToSignup"
+        android:text="@string/login_registrati_description_text"
+        android:textColor="@color/BlueMain"
+        app:layout_constraintEnd_toEndOf="@+id/login_passwordDimenticata_id"
+        app:layout_constraintTop_toBottomOf="@+id/login_passwordDimenticata_id" />
+
+    <TextView
+        android:id="@+id/login_noAccount_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/login_noAccount_description_text"
+        app:layout_constraintEnd_toStartOf="@+id/login_registrati_id"
+        app:layout_constraintTop_toBottomOf="@+id/login_passwordDimenticata_id" />
+
+    <Button
+        android:id="@+id/login_accedi_button_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="70dp"
+        android:background="@color/BlueMain"
+        android:onClick="login"
+        android:text="@string/login_accedi_button_description_text"
+        android:textColor="@color/WhiteMain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_noAccount_id" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

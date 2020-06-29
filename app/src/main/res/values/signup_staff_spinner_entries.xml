@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipo">
+        <item>Seleziona il tipo...</item>
+        <item>Risorse Umane</item>
+        <item>RCCP</item>
+        <item>Dottore</item>
+        <item>Management</item>
+    </string-array>
+</resources>

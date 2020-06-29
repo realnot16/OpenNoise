@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "632580652557",
+    "firebase_url": "https://opennoise-aec10.firebaseio.com",
+    "project_id": "opennoise-aec10",
+    "storage_bucket": "opennoise-aec10.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632580652557:android:1c8bccfb0913a976e7df44",
+        "android_client_info": {
+          "package_name": "com.example.opennoise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632580652557-55egrec8gcig1iuidao0mbkkp1g44tea.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.opennoise",
+            "certificate_hash": "b06a9ce83068000e21a800babf46caa2c6b39e59"
+          }
+        },
+        {
+          "client_id": "632580652557-74eat2jvpv4nh7pcnt7lnc6fda57k8gt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhNurKnDlnEJh8mr-7QyLLTQ-avcTlt4k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632580652557-74eat2jvpv4nh7pcnt7lnc6fda57k8gt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

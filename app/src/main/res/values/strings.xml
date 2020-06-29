@@ -1,0 +1,106 @@
+<resources>
+    <string name="app_name">A Quiet Space</string>
+
+    <!--   String signUpLayout -->
+
+    <string name="signUp_email_text">Email</string>
+    <string name="signUp_password_text">Password</string>
+    <string name="signUp_Cpassword_text">Conferma Password</string>
+    <string name="signUp_nome_text">Nome</string>
+    <string name="signUp_cognome_text">Cognome</string>
+    <string name="signUp_indirizzo_text">Indirizzo</string>
+    <string name="signUp_staff">Risorsa Staff</string>
+    <string name="signUp_yesAccount_description_text">Sei già registrato?</string>
+    <string name="signUp_accedi_description_text">Accedi!</string>
+    <string name="signUp_registrati_button_description_text">Registrati</string>
+    <string name="signUp_text_staff">Fai parte dello staff?</string>
+
+    <!--   String loginLayout -->
+    <string name="login_emailField_text">Email</string>
+    <string name="login_passwordField_text">Password</string>
+    <string name="login_ricordami_description_text">Ricordami</string>
+    <string name="login_passwordDimenticata_description_text">Password dimenticata?</string>
+    <string name="login_noAccount_description_text">Non hai un account?</string>
+    <string name="login_registrati_description_text">Registrati!</string>
+    <string name="login_accedi_button_description_text">Accedi</string>
+
+    <!-- String AreaLayout -->
+    <string name="area_ambiente_text">Seleziona ambiente:</string>
+    <string name="area_edificio_text">Edificio:</string>
+    <string name="area_stanza_text">Ambiente:</string>
+    <string name="area_microfono_text">Seleziona microfono:</string>
+    <string name="area_remoto_text">Utilizza microfono remoto:</string>
+    <string name="area_remoto_api_text">API</string>
+    <string name="area_remoto_channel_text">Channel ID</string>
+    <string name="area_button_text">Inizia registrazione</string>
+
+    <!--   String SoundLayout -->
+    <string name="sound_pageDescription_string">Dati ambiente</string>
+    <string name="sound_dbText_string">Connecting...</string>
+
+    <string name="sound_button_tara_text">Calibratura</string>
+    <string name="sound_button_profile_text">Profilo</string>
+    <string name="sound_button_report_text">Segnalazoni</string>
+    <string name="sound_button_graph_text">Grafici</string>
+
+    <string name="sound_icons_description">Icone Bottoni</string>
+
+
+
+
+    <string name="sound_dbImage_string">Segnalazione visiva db</string>
+
+    <string name="sound_notification_channel_no_audio_name">QuietSpaceNoAudio</string>
+    <string name="sound_notification_channel_no_audio_description">QuietSpaceNoAudio</string>
+    <string name="sound_notification_channel_audio_name">QuietSpaceAudio</string>
+    <string name="sound_notification_channel_audio_description">QuietSpaceAudio</string>
+
+    <string name="sound_notification_text">Prova a parlare più piano...</string>
+    <string name="sound_notification_title">Livello di voce eccessivo</string>
+
+    <string name="sound_dialog_title">Imposta tara</string>
+    <string name="sound_dialog_text">è necessario tarare il dispositivo.</string>
+    <string name="sound_dialog_button">Vai a Tara</string>
+
+    <!-- String ProfileLayout -->
+
+    <string name="profile_toolbar_text">Gestione Profilo</string>
+    <string name="profile_logo_text">Logo</string>
+    <string name="profilo_changep_text">Cambia Password</string>
+    <string name="profilo_privacy_text">Impostazioni Privacy</string>
+    <string name="profilo_settings_text">Impostazioni Avvisi</string>
+    <string name="profilo_logout_text">Logout</string>
+
+    <string name="profilo_changep_text_click">Procedura cambio password</string>
+    <string name="profilo_privacy_text_click">Visualizza impostazioni privacy</string>
+
+    <!--   String ReportLayout -->
+    <string name="report_logo_text">Logo</string>
+    <string name="report_segnalazione_string">Lascia qui un tuo feedback:</string>
+    <string name="report_segnalazione_hint">Scrivi qualcosa...</string>
+    <string name="report_button_text">Invia</string>
+    <string name="report_toolbar_text">Feedback</string>
+
+    <!-- String TaraLayout -->
+
+    <string name="tara_logo_text">Logo</string>
+    <string name="tara_icon_text">IconeLivelli</string>
+    <string name="tara_status_text">StatoRegistrazione</string>
+    <string name="tara_toolbar_text">Tara il dispositivo</string>
+    <string name="tara_description_text">Registra i differenti livelli sonori:</string>
+    <string name="tara_quiet_text">30 dB</string>
+    <string name="tara_moderate_text">60 dB</string>
+    <string name="tara_loud_text">70 dB</string>
+    <string name="tara_registration_button_text">Registra</string>
+    <string name="tara_complete_button_text">Vai alla schermata principale</string>
+
+    <!-- String GraphLayout -->
+
+    <string name="graph_logo_text">Logo</string>
+    <string name="graph_toolbar_text">Informazioni aggregate</string>
+    <string name="graph_day_description_text">Media giornaliera:</string>
+    <string name="graph_eccessi_description_text">N. di eccessi:</string>
+    <string name="graph_day_value_text">...</string>
+    <string name="graph_eccessi_value_text">...</string>
+
+</resources>

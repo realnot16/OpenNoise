@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    tools:context=".GraphActivity">
+
+    <include
+        android:id="@+id/graph_toolbar_layout_id"
+        layout="@layout/toolbar_layout"></include>
+
+
+    <ImageView
+        android:id="@+id/graph_logo_id"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:contentDescription="@string/graph_logo_text"
+        app:layout_constraintBottom_toTopOf="@+id/graph_day_description_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_logo" />
+
+    <TextView
+        android:id="@+id/graph_day_description_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginBottom="170dp"
+        android:text="@string/graph_day_description_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/graph_eccessi_description_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/graph_eccessi_description_text"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/graph_day_description_id"
+        app:layout_constraintTop_toBottomOf="@+id/graph_day_description_id" />
+
+    <TextView
+        android:id="@+id/graph_day_value_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/graph_day_value_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/graph_day_description_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/graph_day_description_id"
+        app:layout_constraintTop_toTopOf="@+id/graph_day_description_id" />
+
+    <TextView
+        android:id="@+id/graph_eccessi_value_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/graph_eccessi_value_text"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/graph_eccessi_description_id"
+        app:layout_constraintStart_toStartOf="@+id/graph_day_value_id"
+        app:layout_constraintTop_toTopOf="@+id/graph_eccessi_description_id" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/graph_line_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/gradient_report_text"
+        android:elevation="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/graph_eccessi_description_id" />
+</androidx.constraintlayout.widget.ConstraintLayout>

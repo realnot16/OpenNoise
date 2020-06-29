@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sound_layout_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sound_background">
+
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/toolbar_layout"></include>
+
+    <ImageView
+        android:id="@+id/sound_dbImage_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:layout_marginBottom="280dp"
+        android:contentDescription="@string/sound_dbImage_string"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_sound_db_quiet" />
+
+    <TextView
+        android:id="@+id/sound_pageDescription_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="140dp"
+        android:background="@drawable/gradient_report_text"
+        android:text="@string/sound_pageDescription_string"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sound_dbText_id" />
+
+    <TextView
+        android:id="@+id/sound_dbText_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sound_dbText_string"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sound_dbImage_id"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/sound_profile_icon_id"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/sound_icons_description"
+        app:layout_constraintBottom_toTopOf="@+id/sound_profilo_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/sound_profilo_button_id"
+        app:layout_constraintStart_toStartOf="@+id/sound_profilo_button_id"
+        app:srcCompat="@drawable/ic_profilo_icona" />
+
+    <ImageView
+        android:id="@+id/sound_graph_icon_id"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/sound_icons_description"
+        app:layout_constraintBottom_toTopOf="@+id/sound_informazioni_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/sound_informazioni_button_id"
+        app:layout_constraintStart_toStartOf="@+id/sound_informazioni_button_id"
+        app:srcCompat="@drawable/sound_graph_icon" />
+
+    <ImageView
+        android:id="@+id/sound_report_icon_id"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/sound_icons_description"
+        app:layout_constraintBottom_toTopOf="@+id/sound_report_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/sound_profilo_button_id"
+        app:layout_constraintStart_toStartOf="@+id/sound_profilo_button_id"
+        app:srcCompat="@drawable/sound_report_icon" />
+
+    <ImageView
+        android:id="@+id/sound_tara_icon_id"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:contentDescription="@string/sound_icons_description"
+        app:layout_constraintBottom_toTopOf="@+id/sound_tara_button_id"
+        app:layout_constraintEnd_toEndOf="@+id/sound_informazioni_button_id"
+        app:layout_constraintStart_toStartOf="@+id/sound_informazioni_button_id"
+        app:srcCompat="@drawable/sound_tara_icon" />
+
+    <Button
+        android:id="@+id/sound_profilo_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="280dp"
+        android:background="@drawable/gradient_tara_button"
+        android:elevation="20dp"
+        android:onClick="profile"
+        android:text="@string/sound_button_profile_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sound_dbText_id" />
+
+    <Button
+        android:id="@+id/sound_informazioni_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="280dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginRight="88dp"
+        android:background="@drawable/gradient_tara_button"
+        android:elevation="20dp"
+        android:onClick="informazioni"
+        android:text="@string/sound_button_graph_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sound_dbText_id" />
+
+    <Button
+        android:id="@+id/sound_report_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/gradient_tara_button"
+        android:elevation="20dp"
+        android:onClick="feedback"
+        android:text="@string/sound_button_report_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sound_profilo_button_id"
+        app:layout_constraintStart_toStartOf="@+id/sound_profilo_button_id"
+        app:layout_constraintTop_toBottomOf="@+id/sound_profilo_button_id" />
+
+    <Button
+        android:id="@+id/sound_tara_button_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/gradient_tara_button"
+        android:elevation="20dp"
+        android:onClick="tara"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="@string/sound_button_tara_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/sound_informazioni_button_id"
+        app:layout_constraintStart_toStartOf="@+id/sound_informazioni_button_id"
+        app:layout_constraintTop_toBottomOf="@+id/sound_informazioni_button_id" />
+</androidx.constraintlayout.widget.ConstraintLayout>

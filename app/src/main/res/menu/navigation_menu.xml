@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/menu_profilo_id"
+            android:icon="@drawable/login_ic_person_black_24dp"
+            android:checked="false"
+            android:title="Profilo" />
+
+        <item
+            android:id="@+id/menu_grafici_id"
+            android:icon="@drawable/ic_timeline_black_24dp"
+            android:checked="false"
+            android:title="Grafici" />
+        <item
+            android:id="@+id/menu_report_id"
+            android:icon="@drawable/ic_bug_report_black_24dp"
+            android:checked="false"
+            android:title="Bug Reporting" />
+        <item
+            android:id="@+id/menu_logout_id"
+            android:icon="@drawable/ic_logout_black_24dp"
+            android:checked="false"
+            android:title="Logout" />
+    </group>
+</menu>
