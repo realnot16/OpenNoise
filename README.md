@@ -29,15 +29,15 @@ Il sistema si basa su due architetture principali:
 
 ### Componenti software
 - **Node-RED** per trasmissione dati al cloud
-  ![Dashboard Node-RED](images/node_red_dashboard.png)
+  ![Dashboard Node-RED](images/schema_nodered.png)
 
 - **ThingSpeak** per memorizzazione e analisi dei dati
-  ![Visualizzazione ThingSpeak](images/thingspeak_dashboard.png)
+  ![Visualizzazione ThingSpeak](images/thingspeak.png)
 
 - **Applicazione Android** sviluppata in Java con Android Studio
-  ![Interfaccia app Android](images/app_android_interface.png)
+  ![Interfaccia app Android](images/applicazione_interfaccia.png)
 
-- **Database Altervista** per autenticazione utenti e gestione dei dati
+- **Database** per autenticazione utenti e gestione dei dati
 
 ## Funzionalità principali
 - Monitoraggio del livello sonoro in tempo reale (30-110 dB).
@@ -78,9 +78,6 @@ Il progetto è in una fase iniziale, con le seguenti aree di sviluppo suggerite:
 - Miglioramento dell'interfaccia utente dell'app.
 - Sviluppo di un sito web per accesso remoto ai dati.
 - Aggiunta di funzionalità di analisi avanzate tramite Matlab integrato con ThingSpeak.
-
-## Licenza
-Questo progetto è distribuito sotto la licenza [specificare tipo di licenza, se applicabile]. Per ulteriori dettagli, consulta il file LICENSE nella repository.
 
 ---
 **Nota:** Questo progetto è stato sviluppato come parte di un corso universitario. Per eventuali dubbi o suggerimenti, contatta il responsabile del progetto tramite la sezione "Issues" su GitHub.
