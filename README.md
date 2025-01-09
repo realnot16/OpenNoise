@@ -10,12 +10,12 @@ Il sistema si basa su due architetture principali:
    - Un microfono remoto basato su Arduino, connesso al cloud tramite Node-RED e ThingSpeak.
    - Un'applicazione Android che visualizza i dati raccolti e fornisce notifiche agli utenti.
 
-   ![Architettura distribuita](images/architettura_distribuita.png)
+   ![Architettura distribuita](Images/architettura_distribuita.png)
 
 2. **Architettura integrata** (futura implementazione):
    - Un software o servizio web che utilizza il microfono del PC per raccogliere i dati.
 
-   ![Architettura integrata](images/architettura_integrata.png)
+   ![Architettura integrata](Images/architettura_integrata.png)
 
 ### Componenti hardware
 - **Scheda Eleego UNO** (compatibile Arduino)
@@ -25,17 +25,17 @@ Il sistema si basa su due architetture principali:
 - **Buzzer attivo** per notifiche sonore
 - **Resistenze** (220 Ohm, 330 Ohm, 10k Ohm)
 
-   ![Schema Arduino](images/schema_arduino.png)
+   ![Schema Arduino](Images/schema_arduino.png)
 
 ### Componenti software
 - **Node-RED** per trasmissione dati al cloud
-  ![Dashboard Node-RED](images/schema_nodered.png)
+  ![Dashboard Node-RED](Images/schema_nodered.png)
 
 - **ThingSpeak** per memorizzazione e analisi dei dati
-  ![Visualizzazione ThingSpeak](images/thingspeak.png)
+  ![Visualizzazione ThingSpeak](Images/thingspeak.png)
 
 - **Applicazione Android** sviluppata in Java con Android Studio
-  ![Interfaccia app Android](images/applicazione_interfaccia.png)
+  ![Interfaccia app Android](Images/applicazione_interfaccia.png)
 
 - **Database** per autenticazione utenti e gestione dei dati
 
