@@ -9,13 +9,11 @@ Il sistema si basa su due architetture principali:
 1. **Architettura distribuita**:
    - Un microfono remoto basato su Arduino, connesso al cloud tramite Node-RED e ThingSpeak.
    - Un'applicazione Android che visualizza i dati raccolti e fornisce notifiche agli utenti.
-
-   ![Architettura distribuita](Images/architettura_distribuita.png)
-
+   
 2. **Architettura integrata** (futura implementazione):
    - Un software o servizio web che utilizza il microfono del PC per raccogliere i dati.
-
-   ![Architettura integrata](Images/architettura_integrata.png)
+  
+        ![Architettura distribuita](Images/architettura.png)
 
 ### Componenti hardware
 - **Scheda Eleego UNO** (compatibile Arduino)
